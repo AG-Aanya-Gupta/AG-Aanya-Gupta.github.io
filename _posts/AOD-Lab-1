@@ -1,0 +1,152 @@
+---
+layout: post
+title: Lab 1 Write-Up
+subtitle: By Aanya Gupta
+---
+
+First, I downloaded the `digimon.csv` file. I would put the table that's in the file here but it's quite large!
+
+I didn't know what digimon were, so I looked it up and found that they were Japanese digital monsters! :D
+
+**Task 1**
+
+Question 1 tasked us with finding the average HP of all the digimon in the dataset. 
+
+I noticed that this task was similar to the one asked about the penguin dataset. Hence, I attempted to use the same method that I used before. 
+
+I created a nested dictionary called `digimon_data`, and it contained empty lists for each column in the csv file. Next, I appended the values in each column to the corresponding list in the dictionary. 
+
+Therefore, I got:
+
+`import csv
+with open("digimon.csv", "r") as f:
+
+data = csv.DictReader(f)
+digimon_data = {
+       "Number": [],
+       "Digimon": [],
+       "Stage": [],
+       "Type": [],
+       "Attribute": [],
+       "Memory": [],
+       "Equip Slots": [],
+       "HP": [],
+       "SP": [],
+       "Atk": [],
+       "Def": [],
+       "Int": [],
+       "Spd": []
+   }
+
+   for row in data:
+
+       digimon_data["Number"].append(row['Number'])
+       digimon_data["Digimon"].append(row['Digimon'])
+       digimon_data["Stage"].append(row['Stage'])
+       digimon_data["Type"].append(row['Type'])
+       digimon_data["Attribute"].append(row['Attribute'])
+       digimon_data["Memory"].append(row['Memory'])
+       digimon_data["Equip Slots"].append(int(row['Equip Slots']))
+       digimon_data["HP"].append(int(row['HP']))
+       digimon_data["SP"].append(int(row['SP']))
+       digimon_data["Atk"].append(int(row['Atk']))
+       digimon_data["Def"].append(int(row['Def']))
+       digimon_data["Int"].append(int(row['Int']))
+       digimon_data["Spd"].append(int(row['Spd']))`
+
+After that, I found the average of the HP values in the list by adding them, and then dividing that value by the length of the list. 
+
+Hence, I got:
+
+hp_avg = sum(digimon_data["HP"])/len(digimon_data["HP"])
+   print(f'The average HP of all Digimon is: {hp_avg}')
+
+*Note: I didn’t like how it took so many lines to create the dictionary. As a result, I did lots of trial and error.*
+
+*For example, I tried including just the HP row and appending the values into that row, but then I realized that I would need all of the values of every column in order to answer question 2.*
+
+*I also tried setting ‘digimon_data’ as an empty dictionary. Then, I made the first level within the dictionary `[row['Digimon']]`. After, I made the second level consist of separate lists of each row in the csv file, containing the corresponding int/str values:*
+
+`digimon_data = {} 
+for row in data: 
+digimon_data[row['Digimon']] = { 
+'Stage': str(row['Stage']), 
+'Type': str(row['Type']), 
+'Attribute': str(row['Attribute']), 
+'Memory': int(row['Memory']), 
+'Equip Slots': int(row['Equip Slots']), 
+'HP': int(row['HP']), 
+'SP': int(row['SP']), 
+'Atk': int(row['Atk']), 
+'Def': int(row['Def']), 
+'Int': int(row['Int']), 
+'Spd': int(row['Spd']) }`
+
+*However, after I tried finding the average of the HP values, I kept getting error messages that I couldn’t divide by a string, or that the list was not iterable.*
+
+*With the same dictionary, I attempted to change the method I used to find the average, instead using the `count` function. However, the code still did not result in the correct output.*
+
+Even after lots of thinking, trial and error, and talking with my peers (Siddhant and Ruby), I couldn’t find a way to make it shorter. I would’ve liked to meet with Ms Feng about it, but I was sick and didn’t have the same frees on Friday or Monday. D:
+
+**Task 2** 
+
+Question 2 tasked us with creating a function that could count the number of Digimon with any specific attribute. 
+
+At first, I had no idea how to proceed! I looked up how to create/define your own function on Python, and Google said to use the `def` function. Hence, I did that for count_digimon:
+
+`def count_digimon(attribute, value):`
+
+I realized that making the function work for values in the dataset would be more difficult than creating the desired output for data outside of the dataset. Hence, I used an `if` statement to show what would happen if values outside of the dataset were entered into the function:
+
+`if attribute not in digimon_data:
+       return 0`
+
+(which makes sense because the output of the function is always a number). 
+
+However, I needed a statement for what would happen if the input was in the dataset. Hence, I thought, “Hm, I need a line that counts (or adds up) how many times a value appears in a given attribute in the column of the csv file. For each time it does appear, I want to add 1 to the output.”
+
+Starting with the return function, I them came to the line:
+
+`return sum(1 for item in digimon_data[attribute] if item == value)`
+
+Then, I came up with a way to enter the attribute and value into the function, and the mode in which the output is displayed:
+
+`attribute_input = input("Enter an attribute: ")
+value_input = input("Enter a value: ")
+  
+digimon_count = count_digimon(attribute_input, value_input)
+print(f"The number of Digimon that follow those parameters are: {digimon_count}")`
+
+**Task 3**
+
+Question 3 tasked us with finding ONE POSSIBLE TEAM of up to 3 digimons with a memory of up to 15 and an attack of at least 300. 
+
+Since we only needed to find one possible team, I decided to find a one possible team of 3 digimon that followed the constraints. 
+
+I started thinking about the question like a system of equations:
+
+`x + y + z <= 15
+p + q + r >= 300`
+
+However, after trying it out, I realized that I couldn’t use a system in my code. 
+
+After analyzing the problem more, I thought that I needed a way to map the name of each digimon to their (and others’) memory and attack values. 
+
+Hence, I created a nested dictionary that contained the names of the digimon, and their corresponding memory and attack values:
+
+`digimon_mem_atk = {}
+
+for row in data:
+
+	digimon_mem_atk[row['Digimon']] = {
+           'Memory': int(row['Memory']),
+           'Atk': int(row['Atk'])
+
+       }
+
+
+
+**Conclusion**
+
+I learned how to overcome errors that I encounter when coding and how to reduce the amount of code I need in order to achieve the same goal. Additionally, I learned how to effectively use nested dictionaries so that my code is shorter! My code could probably be condensed even more, but I'm not really sure how to do that at the moment. In the future, though, as we learn more tools, I might be able to come back to this and apply what I've learned throughout the year.
+
