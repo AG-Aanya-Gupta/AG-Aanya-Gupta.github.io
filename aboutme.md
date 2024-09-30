@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Find out about me! 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Aanya Gupta, and I'm a senior! I absolutely love coding and have quite a bit of coding experience; I've learnt python, know how to build a website with HTML and CSS, and I'm currently learning java! 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### My Background
 
-What else do you need?
+I’m of Indian origin, however, I was born in Hong Kong and lived there for 8 years in addition to Londdon, Singapore, and now New York! This has been my favourite place to live!
 
-### My story
+### My Hobbies
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+In school, I love learning about STEM subjects, including app development, mathematics, and biology! Outside of school, I enjoy coding, playing volleyball (GO LIONS!), singing, dancing, and reading!
+
+![Volleyball Pusheen](/assets/img/volleyballpusheen.png)
