@@ -21,24 +21,29 @@ Therefore, I got:
 
 ```
 import csv
+
 with open("digimon.csv", "r") as f:
+
 data = csv.DictReader(f)
+
 digimon_data = {
-       "Number": [],
-       "Digimon": [],
-       "Stage": [],
-       "Type": [],
-       "Attribute": [],
-       "Memory": [],
-       "Equip Slots": [],
-       "HP": [],
-       "SP": [],
-       "Atk": [],
-       "Def": [],
-       "Int": [],
-       "Spd": []
-   }
+&nbsp; "Number": [],
+&nbsp; "Digimon": [],
+&nbsp; "Stage": [],
+&nbsp; "Type": [],
+&nbsp; "Attribute": [],
+&nbsp; "Memory": [],
+&nbsp; "Equip Slots": [],
+&nbsp; "HP": [],
+&nbsp; "SP": [],
+&nbsp; "Atk": [],
+&nbsp; "Def": [],
+&nbsp; "Int": [],
+&nbsp; "Spd": []
+&nbsp; }
+
    for row in data:
+
        digimon_data["Number"].append(row['Number'])
        digimon_data["Digimon"].append(row['Digimon'])
        digimon_data["Stage"].append(row['Stage'])
