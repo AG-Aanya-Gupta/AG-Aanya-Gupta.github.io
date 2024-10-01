@@ -21,11 +21,10 @@ Therefore, I got:
 
 ```
 import csv
-
 with open("digimon.csv", "r") as f:
-
+<br>
 data = csv.DictReader(f)
-
+<br>
 digimon_data = {
 &nbsp; "Number": [],
 &nbsp; "Digimon": [],
@@ -41,9 +40,9 @@ digimon_data = {
 &nbsp; "Int": [],
 &nbsp; "Spd": []
 &nbsp; }
-
+<br>
    for row in data:
-
+<br>
        digimon_data["Number"].append(row['Number'])
        digimon_data["Digimon"].append(row['Digimon'])
        digimon_data["Stage"].append(row['Stage'])
@@ -75,20 +74,22 @@ hp_avg = sum(digimon_data["HP"])/len(digimon_data["HP"])
 *I also tried setting ‘digimon_data’ as an empty dictionary. Then, I made the first level within the dictionary `[row['Digimon']]`. After, I made the second level consist of separate lists of each row in the csv file, containing the corresponding int/str values:*
 
 ```
-digimon_data = {} 
-for row in data: 
+digimon_data = {}
+<br>
+for row in data:
+<br>
 digimon_data[row['Digimon']] = { 
-'Stage': str(row['Stage']), 
-'Type': str(row['Type']), 
-'Attribute': str(row['Attribute']), 
-'Memory': int(row['Memory']), 
-'Equip Slots': int(row['Equip Slots']), 
-'HP': int(row['HP']), 
-'SP': int(row['SP']), 
-'Atk': int(row['Atk']), 
-'Def': int(row['Def']), 
-'Int': int(row['Int']), 
-'Spd': int(row['Spd']) }
+&nbsp; 'Stage': str(row['Stage']), 
+&nbsp; 'Type': str(row['Type']), 
+&nbsp; 'Attribute': str(row['Attribute']), 
+&nbsp; 'Memory': int(row['Memory']), 
+&nbsp; 'Equip Slots': int(row['Equip Slots']), 
+&nbsp; 'HP': int(row['HP']), 
+&nbsp; 'SP': int(row['SP']), 
+&nbsp; 'Atk': int(row['Atk']), 
+&nbsp; 'Def': int(row['Def']), 
+&nbsp; 'Int': int(row['Int']), 
+&nbsp; 'Spd': int(row['Spd']) }
 ```
 
 *However, after I tried finding the average of the HP values, I kept getting error messages that I couldn’t divide by a string, or that the list was not iterable.*
@@ -103,7 +104,9 @@ Question 2 tasked us with creating a function that could count the number of Dig
 
 At first, I had no idea how to proceed! I looked up how to create/define your own function on Python, and Google said to use the `def` function. Hence, I did that for `count_digimon`:
 
-`def count_digimon(attribute, value):`
+```
+def count_digimon(attribute, value):
+```
 
 I realized that making the function work for values in the dataset would be more difficult than creating the desired output for data outside of the dataset. Hence, I used an `if` statement to show what would happen if values outside of the dataset were entered into the function:
 
@@ -118,14 +121,17 @@ However, I needed a statement for what would happen if the input was in the data
 
 Starting with the return function, I them came to the line:
 
-`return sum(1 for item in digimon_data[attribute] if item == value)`
+```
+return sum(1 for item in digimon_data[attribute] if item == value)
+```
 
 Then, I came up with a way to enter the attribute and value into the function, and the mode in which the output is displayed:
 
 ```
-attribute_input = input("Enter an attribute: ")
-value_input = input("Enter a value: ")
-digimon_count = count_digimon(attribute_input, value_input)
+att_input = input("Enter an attribute: ")
+val_input = input("Enter a value: ")
+<br>    
+digimon_count = count_digimon(att_input, val_input)
 print(f"The number of Digimon that follow those parameters are: {digimon_count}")
 ```
 
@@ -150,6 +156,7 @@ Hence, I created a nested dictionary that contained the names of the digimon, an
 
 ```
 digimon_mem_atk = {}
+
 for row in data:
 	digimon_mem_atk[row['Digimon']] = {
            'Memory': int(row['Memory']),
