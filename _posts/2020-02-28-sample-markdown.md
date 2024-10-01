@@ -78,18 +78,18 @@ digimon_data = {}
 <br>
 for row in data:
 <br>
-digimon_data[row['Digimon']] = { 
-&nbsp; 'Stage': str(row['Stage']), 
-&nbsp; 'Type': str(row['Type']), 
-&nbsp; 'Attribute': str(row['Attribute']), 
-&nbsp; 'Memory': int(row['Memory']), 
-&nbsp; 'Equip Slots': int(row['Equip Slots']), 
-&nbsp; 'HP': int(row['HP']), 
-&nbsp; 'SP': int(row['SP']), 
-&nbsp; 'Atk': int(row['Atk']), 
-&nbsp; 'Def': int(row['Def']), 
-&nbsp; 'Int': int(row['Int']), 
-&nbsp; 'Spd': int(row['Spd']) }
+digimon_data[row['Digimon']] = {
+	'Stage': str(row['Stage']), 
+	'Type': str(row['Type']), 
+	'Attribute': str(row['Attribute']), 
+	'Memory': int(row['Memory']), 
+	'Equip Slots': int(row['Equip Slots']), 
+	'HP': int(row['HP']), 
+	'SP': int(row['SP']), 
+	'Atk': int(row['Atk']), 
+	'Def': int(row['Def']), 
+	'Int': int(row['Int']), 
+	'Spd': int(row['Spd']) }
 ```
 
 *However, after I tried finding the average of the HP values, I kept getting error messages that I couldn’t divide by a string, or that the list was not iterable.*
@@ -130,7 +130,7 @@ Then, I came up with a way to enter the attribute and value into the function, a
 ```
 att_input = input("Enter an attribute: ")
 val_input = input("Enter a value: ")
-<br>    
+   
 digimon_count = count_digimon(att_input, val_input)
 print(f"The number of Digimon that follow those parameters are: {digimon_count}")
 ```
