@@ -14,4 +14,4 @@ I’m of Indian origin, however, I was born in Hong Kong and lived there for 8 y
 
 In school, I love learning about STEM subjects, including app development, mathematics, and biology! Outside of school, I enjoy coding, playing volleyball (GO LIONS!), singing, dancing, and reading!
 
-![Volleyball Pusheen](/assets/img/volleyballpusheen.png)
+![Volleyball Pusheen](/assets/volleyball.png)
