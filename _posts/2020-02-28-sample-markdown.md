@@ -2,6 +2,9 @@
 layout: post
 title: Lab 1 Write-Up
 subtitle: By Aanya Gupta
+cover-img: /assets/pizza.png
+thumbnail-img: /assets/pizza.png
+share-img: /assets/pizza.png
 tags: [Digimon, Python, Data Science, AOD]
 ---
 
