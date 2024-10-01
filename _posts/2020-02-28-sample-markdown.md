@@ -22,27 +22,27 @@ Therefore, I got:
 ```
 import csv
 with open("digimon.csv", "r") as f:
-<br>
+
 data = csv.DictReader(f)
-<br>
+
 digimon_data = {
-&nbsp; "Number": [],
-&nbsp; "Digimon": [],
-&nbsp; "Stage": [],
-&nbsp; "Type": [],
-&nbsp; "Attribute": [],
-&nbsp; "Memory": [],
-&nbsp; "Equip Slots": [],
-&nbsp; "HP": [],
-&nbsp; "SP": [],
-&nbsp; "Atk": [],
-&nbsp; "Def": [],
-&nbsp; "Int": [],
-&nbsp; "Spd": []
-&nbsp; }
-<br>
+	"Number": [],
+	"Digimon": [],
+	"Stage": [],
+	"Type": [],
+	"Attribute": [],
+	"Memory": [],
+	"Equip Slots": [],
+	"HP": [],
+	"SP": [],
+	"Atk": [],
+	"Def": [],
+	"Int": [],
+	"Spd": []
+}
+
    for row in data:
-<br>
+
        digimon_data["Number"].append(row['Number'])
        digimon_data["Digimon"].append(row['Digimon'])
        digimon_data["Stage"].append(row['Stage'])
@@ -75,9 +75,9 @@ hp_avg = sum(digimon_data["HP"])/len(digimon_data["HP"])
 
 ```
 digimon_data = {}
-<br>
+
 for row in data:
-<br>
+
 digimon_data[row['Digimon']] = {
 	'Stage': str(row['Stage']), 
 	'Type': str(row['Type']), 
