@@ -19,9 +19,8 @@ I created a dictionary called `digimon_data`, and it contained empty lists for e
 
 Therefore, I got:
 
-import csv
+`import csv
 with open("digimon.csv", "r") as f:
-
 data = csv.DictReader(f)
 digimon_data = {
        "Number": [],
@@ -38,9 +37,7 @@ digimon_data = {
        "Int": [],
        "Spd": []
    }
-
    for row in data:
-
        digimon_data["Number"].append(row['Number'])
        digimon_data["Digimon"].append(row['Digimon'])
        digimon_data["Stage"].append(row['Stage'])
@@ -53,7 +50,7 @@ digimon_data = {
        digimon_data["Atk"].append(int(row['Atk']))
        digimon_data["Def"].append(int(row['Def']))
        digimon_data["Int"].append(int(row['Int']))
-       digimon_data["Spd"].append(int(row['Spd']))
+       digimon_data["Spd"].append(int(row['Spd']))`
 
 After that, I found the average of the HP values in the list by adding them, and then dividing that value by the length of the list. 
 
@@ -68,7 +65,7 @@ Hence, I got:
 
 *I also tried setting ‘digimon_data’ as an empty dictionary. Then, I made the first level within the dictionary `[row['Digimon']]`. After, I made the second level consist of separate lists of each row in the csv file, containing the corresponding int/str values:*
 
-digimon_data = {} 
+`digimon_data = {} 
 for row in data: 
 digimon_data[row['Digimon']] = { 
 'Stage': str(row['Stage']), 
@@ -81,7 +78,7 @@ digimon_data[row['Digimon']] = {
 'Atk': int(row['Atk']), 
 'Def': int(row['Def']), 
 'Int': int(row['Int']), 
-'Spd': int(row['Spd']) }
+'Spd': int(row['Spd']) }`
 
 *However, after I tried finding the average of the HP values, I kept getting error messages that I couldn’t divide by a string, or that the list was not iterable.*
 
@@ -114,7 +111,6 @@ Then, I came up with a way to enter the attribute and value into the function, a
 
 `attribute_input = input("Enter an attribute: ")
 value_input = input("Enter a value: ")
-  
 digimon_count = count_digimon(attribute_input, value_input)
 print(f"The number of Digimon that follow those parameters are: {digimon_count}")`
 
@@ -135,15 +131,12 @@ After analyzing the problem more, I thought that I needed a way to map the name 
 
 Hence, I created a nested dictionary that contained the names of the digimon, and their corresponding memory and attack values:
 
-digimon_mem_atk = {}
-
+`digimon_mem_atk = {}
 for row in data:
-
 	digimon_mem_atk[row['Digimon']] = {
            'Memory': int(row['Memory']),
            'Atk': int(row['Atk'])
-
-       }
+       }`
 
 After that, I hit a bit of a road block. So, I got my whiteboard out and drew the different lists/dictionaries that I would need in the form of a mind map. I knew that I would start with the nested dictionary containing the memory and attack values for each Digimon. Then, I said that I wanted to end with a list of sets of three Digimon *whose parameters fit the criteria*. So, in my head, I thought, “What are the steps in-between?” 
 
