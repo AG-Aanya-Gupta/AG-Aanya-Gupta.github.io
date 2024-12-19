@@ -33,7 +33,6 @@ create_api_key("aanya1_gupta1")
 
 ## Endpoint 1 
 
-api_key = "9Tu4H4SZqjLZyEwtXGIutUaMKZgHfYk2gEMUASZfMIXYLGfVeYJEou9T2lSioURl"
 file_path = "OFF_LAB2_AG.csv"
 columns = ["ref_pop", "access_to_elec", "prim_schl_enrollment", "prim_complete_rate", "fert_rate"]
 
