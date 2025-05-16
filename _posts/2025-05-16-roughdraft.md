@@ -20,6 +20,10 @@ Like many students, I have experienced the preceding scenario prior. Social medi
 
 Females:
 
-
+![FGraph1](/assets/FGraph1.png)
+![FGraph2](/assets/FGraph2.png)
 
 Males:
+
+![MGraph1](/assets/MGraph1.png)
+![MGraph2](/assets/MGRaph2.png)
