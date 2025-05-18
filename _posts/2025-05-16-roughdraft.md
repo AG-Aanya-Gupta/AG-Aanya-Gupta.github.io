@@ -16,9 +16,9 @@ Like many students, I have experienced the preceding scenario prior. Social medi
 
 # Data
 
-(Still deciding which graphs I want to present, and making more histograms for F and M Graphs 1 and 2)
+Still deciding which graphs I want to present, and making more histograms for F and M Graphs 1 and 2
 
-(I will also be making a simulation for an intervention for this motivation issue)
+I will also be making a simulation for an intervention for this motivation issue
 
 Females:
 
