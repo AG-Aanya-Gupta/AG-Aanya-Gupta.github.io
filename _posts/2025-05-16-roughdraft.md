@@ -20,12 +20,12 @@ Like many students, I have experienced the preceding scenario prior. Social medi
 
 Females:
 
-![fgraph1](/assets/fgraph1.png)
-![fgraph2](/assets/fgraph2.png)
-![fgraph3](/assets/fgraph3.png)
+![fgraph1](/assets/fgraph1.jpg)
+![fgraph2](/assets/fgraph2.jpg)
+![fgraph3](/assets/fgraph3.jpg)
 
 Males:
 
-![mgraph1](/assets/mgraph1.png)
-![mgraph2](/assets/mgraph2.png)
-![mgraph3](/assets/mgraph3.png)
+![mgraph1](/assets/mgraph1.jpg)
+![mgraph2](/assets/mgraph2.jpg)
+![mgraph3](/assets/mgraph3.jpg)
