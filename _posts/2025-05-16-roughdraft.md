@@ -16,7 +16,7 @@ Like many students, I have experienced the preceding scenario prior. Social medi
 
 # Data
 
-(Still deciding which graphs I want to present)
+(Still deciding which graphs I want to present, and making more histograms for M and F Graphs 1 and 2)
 
 Females:
 
