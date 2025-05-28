@@ -22,12 +22,12 @@ I will also be making a simulation for an intervention for this motivation issue
 
 Females:
 
-![fgraph1](/assets/fgraph1.jpg)
+![fgraph1](/assets/FEMALE.jpg)
 ![fgraph2](/assets/fgraph2.jpg)
 ![fgraph3](/assets/fgraph3.jpg)
 
 Males:
 
-![mgraph1](/assets/mgraph1.jpg)
+![mgraph1](/assets/MALE.jpg)
 ![mgraph2](/assets/mgraph2.jpg)
 ![mgraph3](/assets/mgraph3.jpg)
