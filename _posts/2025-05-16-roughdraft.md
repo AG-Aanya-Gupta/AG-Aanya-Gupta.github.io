@@ -18,6 +18,18 @@ In my junior year, I conducted independent, scientific research outside of schoo
 
 After reading many scientific papers about the intersections between social media, mental health, and motivation, I decided that I would seek to determine the relationship between hours of social media usage and subsequent motivation to study, whilst also creating my own intervention. 
 
+# Methodology
+
+I hypothesized that as both male and female students used more social media during their breaks, their subsequent motivation to study would decrease. In order to test this hypothesis, I created two surveys (with the exact same questions) that I would send out to 35 males and 35 females; the reasoning behind sending my survey to a total of 70 students was that I had to pick a sample size which had a quantity of participants which was less than 10% of the total, UD student population. There are 722 students in the UD this year, and 10% of that is 72. Hence, I picked a multiple of ten close to that value (70). Since I wanted to control for gender, I divided 70 by 2 to see how many males and females to whom I would send my survey (35 each). To gather the names, I emailed Mr. Garrison, and he selected 35 random males and females from 9th - 12th grade (year groups were completely randomized, but ended up being roughly even). 
+
+In terms of the actual survey itself, I went through multiple iterations to reduce biases in the questions I asked, and any biases participants might project onto the results they submitted. Since the attention span of HM students for random surveys is quite low, I decided that I would write a maxmimum of three questions. 
+
+1. During a study break, for how long do you use social media?
+2. After your break, how motivated do you feel to continue studying?
+3. Can I reach out to you if I have more questions?
+
+
+
 # Data
 
 ## Females:
