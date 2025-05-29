@@ -52,7 +52,7 @@ As seen in the scatter plot for females, from this scatter plot–as seen throug
 
 My hypothesis was indeed proved: significant, inverse, negative relationship exists between social media usage during breaks and subsequent motivation to study. However, I wanted to create an intervention that could be used in place of social media. Hence, I did some brainstorming, and I settled on **The Social Intervention.** 
 
-The Social Intervention is a website that I created using HTML and Javascript which students can use during their study breaks in place of other negative applications. The website includes a 5-minute timer and guided, relaxing animations that I drew by hand. The website can be found by clicking the folloing link:
+The Social Intervention is a website that I created using HTML and Javascript which students can use during their study breaks in place of other negative applications. The website includes a 5-minute timer and guided, relaxing animations that I drew by hand. The website can be found by clicking the following link:
 
 [The Social Intervention](https://ag-aanya-gupta.github.io/social.intervention/index.html)
 
