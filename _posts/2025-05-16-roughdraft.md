@@ -8,8 +8,15 @@ share-img: /assets/pizza.png
 tags: [Social Media, Motivation, Data Science, AOD]
 ---
 
-# Introduction + Why I Chose this Topic
+# Introduction + How and Why I Chose this Topic
 
+Picture this: you have a Calculus test tomorrow, which you have not studied for. You get home, sit down at your desk, and start solving some problems. After what feels like 5 hours have passed, you take a break by using social media on your phone. Why do you do this? Would you feel more or less motivated to study after your break? 
+
+Like many students, I have experienced the preceding scenario. Social media has become one of the biggest threats to our generation, hindering our attention spans and abilities to concentrate, hurting our mental health, and much more. A study found that 67% of teenagers use 3+ hours of social media per day, and coupling these facts with my experiences, I decided that for my final project, I wanted to do something related to adolescent usage of social media. 
+
+In my junior year, I conducted independent, scientific research outside of school regarding mental health. Hence, I initially thought of doing something related to mental health and social media. However, I'd previously read a lot about that topic, so it didn't interest me as much. With the recent rise in the field of decision sciences, and the Class of 2025's collective senioritis, I decided that motivation might be interesting to study. 
+
+After reading many scientific papers about the intersections between social media, mental health, and motivation, I decided that I would seek to determine the relationship between hours of social media usage and subsequent motivation to study, whilst also creating my own intervention. 
 
 # Data
 
@@ -59,6 +66,6 @@ After that, I thought I'd add a cute little "What we Do" page to the website, ju
 
 # Conclusion
 
-In a nutshell, I found that a significant, inverse, negative relationship exists between social media usage during breaks and subsequent motivation to study. Additionally, I tried creating an intervention which students could use during break as opposed to social media. If I were to continue this project (which I probably will, since I love this topic), I would test out the efficacy of my intervention. It might involve having one group of students use my intervention during their breaks, and another group use social media during their breaks. 
+In a nutshell, I found that a significant, inverse, negative relationship exists between social media usage during breaks and subsequent motivation to study. Additionally, I tried creating an intervention which students could use during break as opposed to social media. If I were to continue this project (which I probably will, since I love this topic), I would test out the efficacy of my intervention. It might involve having one group of students use my intervention during their breaks, and another group use social media during their breaks. Furthermore, I will definitely include non-binary/non-gender conforming students; I had already sent my survey out by the time I talked with Ms. Feng. Also, it might be cool to see how social media usage v. motivation differs for different age groups. 
 
 Overall, this was a really fun project! I loved that we were able to explore what we wanted to, and that made me motivated to keep working throughout the process. The planning stage was probably the hardest, but after that, it was really cool to be able to analyze and create what I'd been planning. It's been a pleasure being in this class!! :D 
