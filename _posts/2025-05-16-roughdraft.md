@@ -28,9 +28,11 @@ In terms of the actual survey itself, I went through multiple iterations to redu
 2. After your break, how motivated do you feel to continue studying?
 3. Can I reach out to you if I have more questions?
 
-
+Then, I sent out my survey and awaited responses from my participants. I sent follow-up emails to people who did not respond to their survey.  
 
 # Data
+
+17 out of 35 females responded to their survey, while 16 out of 35 males responded to their survey. Respondents who said they did not use social media during their breaks were omitted from the dataset prior to analysis--which applied to 4 males. 
 
 ## Females:
 
